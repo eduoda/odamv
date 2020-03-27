@@ -13,14 +13,15 @@ PID pid(&input, &output, &setpoint, K_P, K_I, K_D, P_ON_M, DIRECT);
 
 void pidSetup(){
   pid.SetMode(AUTOMATIC);
-  pid.SetSampleTime(20);
+  pid.SetSampleTime(SAMPLE_TIME);
   pid.SetOutputLimits(-1000,1000);
   stepperUpdateSpeed(0);
 }
 
+double reference = 0;
 void pidRun(){
-  setpoint = getSetpoint();
-  input = getPressure();
+  reference = getReference();
+  input = getPressure()-reference;
 
   if(pid.Compute())
     stepperUpdateSpeed(output);

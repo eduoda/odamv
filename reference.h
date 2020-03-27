@@ -9,7 +9,7 @@ double PEEP = 2;
 double PIP = 12;
 double PPLAT = 10;
 
-double getSetpoint(){
+double getReference(){
   static unsigned long T3 = 60000/RR;
   static unsigned long T2 = T3/2;
   static unsigned long T1 = T2/3;
@@ -20,3 +20,8 @@ double getSetpoint(){
   T0=millis();
   return PEEP;
 }
+
+void setRR   (double v) { RR    = v; }
+void setPEEP (double v) { PEEP  = v; }
+void setPIP  (double v) { PIP   = v; }
+void setPPLAT(double v) { PPLAT = v; }

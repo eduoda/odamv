@@ -6,8 +6,9 @@ void serialRun(){
   static unsigned long tic = millis();
   unsigned long tac = millis();
   if(tac-tic<100) return;
-  Serial.print(setpoint); Serial.print(" ");
-  Serial.print(input); Serial.print(" ");
+  Serial.print(reference); Serial.print(" ");
+  Serial.print(input+reference); Serial.print(" ");
+//  Serial.print(output); Serial.print(" ");
   Serial.println();
   tic = tac;
 }
