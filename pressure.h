@@ -19,6 +19,6 @@ void pressureSetup(){
   envPressure /= 100;
 }
 
-double getPressure(){
+float getPressure(){
   return bme.readPressure()/100.0F - envPressure;
 }

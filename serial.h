@@ -8,7 +8,7 @@ void serialRun(){
   if(tac-tic<100) return;
   Serial.print(reference); Serial.print(" ");
   Serial.print(input+reference); Serial.print(" ");
-//  Serial.print(output); Serial.print(" ");
+  Serial.print(output);
   Serial.println();
   tic = tac;
 }
@@ -20,19 +20,34 @@ void serialEvent() {
   static float v = 0;
   while (Serial.available()) {
     char c = (char)Serial.read();
-    if(c=='P' || c=='I' || c=='D'){
+    double RR = 8; // respiratory rate
+    double PEEP = 2;
+    double PIP = 12;
+    double PPLAT = 10;
+
+    if(c=='P' || c=='I' || c=='D' || c == 'E' || c == 'W' || c == 'X' || c == 'Y' || c == 'Z'){
       cmd = c;
     }else if(c!='\n'){
       s+=c;
     }else{
       v = s.toFloat();
-      if(cmd=='P')
-        kp = v;
-      else if(cmd=='I')
-        ki = v;
-      else if(cmd=='D')
-        kd = v;
-      pid.SetTunings(kp,ki,kd);
+      if(cmd=='P'){
+        pidSetP(v);
+      }else if(cmd=='I'){
+        pidSetI(v);
+      }else if(cmd=='D'){
+        pidSetD(v);
+      }else if(cmd=='E'){
+        errorReset();
+      }else if(cmd=='W'){
+        referenceSetRR(v);
+      }else if(cmd=='X'){
+        referenceSetPEEP(v);
+      }else if(cmd=='Y'){
+        referenceSetPIP(v);
+      }else if(cmd=='Z'){
+        referenceSetPPLAT(v);
+      }
       s = "";
       c = '\0';
     }

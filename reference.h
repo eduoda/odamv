@@ -21,7 +21,7 @@ double getReference(){
   return PEEP;
 }
 
-void setRR   (double v) { RR    = v; }
-void setPEEP (double v) { PEEP  = v; }
-void setPIP  (double v) { PIP   = v; }
-void setPPLAT(double v) { PPLAT = v; }
+void referenceSetRR   (double v) { RR    = v; }
+void referenceSetPEEP (double v) { PEEP  = v; }
+void referenceSetPIP  (double v) { PIP   = v; }
+void referenceSetPPLAT(double v) { PPLAT = v; }

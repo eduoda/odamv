@@ -1,7 +1,7 @@
 #include "config.h"
 #include "pid.h"
+#include "error.h"
 #include "serial.h"
-
 
 void setup() {
   Serial.begin(9600);
@@ -15,4 +15,5 @@ void setup() {
 void loop() {
   pidRun();
   serialRun();
+  errorRun();
 }
