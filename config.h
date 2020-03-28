@@ -1,9 +1,9 @@
 #pragma once
 
-#define SAMPLE_TIME 20
-#define K_P 0.09
-#define K_I 0.12
-#define K_D 0.06
+#define SAMPLE_TIME 50
+#define K_P 10.00
+#define K_I  0.12
+#define K_D  0.06
 
 #define MAX_PRESSURE 60
 
