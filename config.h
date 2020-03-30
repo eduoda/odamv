@@ -20,12 +20,12 @@
   #define MAX_FREQ   19000
   #define MIN_FREQ    1000
   #define HOMING_FREQ 3000
-  #define MAX_POS  19200
-  #define MIN_POS -19200
+  #define MAX_POS    19200
+  #define MIN_POS   -19200
 #elif HW == INSPIREHW
-  #define K_P  40.70
-  #define K_I   0.16
-  #define K_D   0.00
+  #define K_P 40.70
+  #define K_I  0.16
+  #define K_D  0.00
   #define STP_PIN 4
   #define DIR_PIN 3
   #define ENA_PIN 2
@@ -33,8 +33,9 @@
   #define MAX_FREQ    3600
   #define MIN_FREQ     200
   #define HOMING_FREQ 1200
-  #define MAX_POS   920
-  #define MIN_POS  -920
+  #define MAX_POS      920
+  #define MIN_POS     -920
+  #define PRESSURE_PIN  A0
 #else
   #error "Unknown HARDWARE"
 #endif
