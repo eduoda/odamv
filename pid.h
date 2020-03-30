@@ -38,7 +38,7 @@ void pidRun(){
   if(reference == PEEP){
     pid.SetMode(MANUAL);
     output = 0;
-    stepperGoTo(0,3000);
+    stepperGoTo(0,MAX_FREQ/2);
     stepperDisable();
     pid.SetMode(AUTOMATIC);
   }else{
@@ -59,5 +59,11 @@ void pidSetI(double v){
 }
 void pidSetD(double v){
   kd = v;
+  pid.SetTunings(kp,ki,kd);
+}
+void pidSetPID(double _p,double _i,double _d){
+  kp = _p;
+  ki = _i;
+  kd = _d;
   pid.SetTunings(kp,ki,kd);
 }

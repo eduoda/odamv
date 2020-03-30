@@ -7,6 +7,15 @@ volatile int pos = 0;
 int stopAt = MAX_POS;
 int dir = 1;
 float freq = 0;
+
+void stepperDisable(){
+  digitalWrite(ENA_PIN,!ENA_VAL);
+}
+
+void stepperEnable(){
+  digitalWrite(ENA_PIN,ENA_VAL);
+}
+
 void stepperSetSpeed(int d, float f){
   dir = d;
   freq = f;
@@ -36,9 +45,9 @@ void stepperSetup(){
   pinMode(STP_PIN, OUTPUT);
   pinMode(DIR_PIN, OUTPUT);
   pinMode(ENA_PIN, OUTPUT);
-  digitalWrite(ENA_PIN,1);
+  stepperDisable();
   delay(1000);
-  digitalWrite(ENA_PIN,0);
+  stepperEnable();
   pos = 0;
   
   // TIMER1
@@ -72,11 +81,4 @@ void stepperGoTo(int p,float f){
   }
   stepperSetSpeed(0, 0);
   stopAt = MAX_POS;
-}
-
-void stepperDisable(){
-  digitalWrite(ENA_PIN,1);
-}
-void stepperEnable(){
-  digitalWrite(ENA_PIN,0);
 }
