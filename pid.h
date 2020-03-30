@@ -38,7 +38,7 @@ void pidRun(){
   if(reference == PEEP){
     pid.SetMode(MANUAL);
     output = 0;
-    stepperGoTo(0,MAX_FREQ/2);
+    stepperGoTo(0,HOMING_FREQ);
     stepperDisable();
     pid.SetMode(AUTOMATIC);
   }else{
