@@ -46,9 +46,9 @@ This is what currently looks like:
 
 
 #### resources:
-[book: basics on ventilators]()
-[lecture: basics on ventilators](<https://www.medcram.com/courses/COVID19-ventilator-mechanical-ventilation>)
-[collage of current efforts in article format](<https://www.preprints.org/manuscript/202003.0362/v1>)
-[wiki with COVID-19 references (in Portuguese)](<https://pt.wikiversity.org/wiki/Ci%C3%AAncia_cidad%C3%A3_face_ao_Covid-19>)
-[wiki with ventilator references (in Portuguese)](<https://pt.wikiversity.org/wiki/Ci%C3%AAncia_cidad%C3%A3_face_ao_Covid-19/Respiradores_de_c%C3%B3digo_aberto>)
+[book: basics on ventilators](<https://www.worldcat.org/title/medical-ventilator-system-basics-a-clinical-guide/oclc/990267764>)  
+[lecture: basics on ventilators](<https://www.medcram.com/courses/COVID19-ventilator-mechanical-ventilation>)  
+[collage of current efforts in article format](<https://www.preprints.org/manuscript/202003.0362/v1>)  
+[wiki with COVID-19 references (in Portuguese)](<https://pt.wikiversity.org/wiki/Ci%C3%AAncia_cidad%C3%A3_face_ao_Covid-19>)  
+[wiki with ventilator references (in Portuguese)](<https://pt.wikiversity.org/wiki/Ci%C3%AAncia_cidad%C3%A3_face_ao_Covid-19/Respiradores_de_c%C3%B3digo_aberto>)  
 
