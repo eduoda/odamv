@@ -29,6 +29,7 @@ TBD
 ### progress:
 
 This is what the pressure sensor from a ventilator should read out:
+
 ![simple model](/media/simple_model.jpeg)
 
 ![zoomed in](/media/ventilator_curve_theoretical.jpeg)
@@ -36,7 +37,7 @@ This is what the pressure sensor from a ventilator should read out:
 ---
 
 #### - 31/03/
-This is what currently looks like [](/media/print_ventilator_output_march31.jpeg)
+This is what currently looks like ![](/media/print_ventilator_output_march31.jpeg)
 
 
 
