@@ -2,7 +2,7 @@
 
 Hello! Welcome to yet another open source ventilator project. 
 
-Due to COVID-19, the world is facing shortages on personal protection utilities and medical equipment. Critically, life saving tools as ventilators are also in this shortage and there are many groups around the globe racing to produce affordable, open source solutions, that can be tested and deployed within the next weeks/months (this is being written on 31/03/2020).
+Due to COVID-19, the world is facing shortages on personal protection utilities and medical equipment. Critically, life saving tools such as ventilators are also in this shortage and there are many groups around the globe racing to produce affordable, open source solutions, that can be tested and deployed within the next weeks/months (this is being written on 31/03/2020).
 
 
 ## !!!WARNING!!!
