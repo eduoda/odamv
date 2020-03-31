@@ -36,8 +36,10 @@ This is what the pressure sensor from a ventilator should read out:
 
 ---
 
-#### - 31/03/
-This is what currently looks like ![](/media/print_ventilator_output_march31.jpeg)
+#### - 31/03/2020
+This is what currently looks like:
+
+ ![](/media/print_ventilator_output_march31.jpeg)
 
 
 
